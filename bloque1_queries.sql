@@ -158,8 +158,6 @@ WITH
 -- Último trimestre completo dinámico:
 --   inicio = primer día del trimestre anterior al trimestre en curso
 --   fin    = último día de ese trimestre (= primer día del trimestre actual - 1 día)
--- En producción (CURRENT_DATE = hoy) esto devuelve siempre el último trimestre cerrado.
--- Con datos históricos, fecha_corte = MAX(transaction_date) ancla el cálculo.
 tx_q AS (
   SELECT
     t.store_id,
@@ -202,7 +200,6 @@ store_productividad AS (
 ),
 
 -- Percentil 25 de GMV/m² dentro de cada formato
--- PERCENTILE_CONT es una función de ventana en BigQuery
 percentil_25 AS (
   SELECT DISTINCT
     format,
@@ -254,7 +251,6 @@ ORDER BY format, rank_gmv_m2_formato;
 -- ============================================================================
 -- Cohorte = mes de la primera transacción del cliente (loyalty_card = TRUE)
 -- Retención mes N = % de clientes de la cohorte que compraron en el mes N
--- Resultado: tabla pivoteada con cohorte en filas y mes_0/1/2/3/6 en columnas
 -- ============================================================================
 
 WITH
