@@ -1,0 +1,41 @@
+store_id,store_name,country,city,format,size_sqm,opening_date,region
+TIENDA_001,Tienda San José 1,CR,San José,HIPERMERCADO,7037,2023-11-24,Sur
+TIENDA_002,Tienda Guatemala City 2,GT,Guatemala City,HIPERMERCADO,7016,2023-05-06,Capital
+TIENDA_003,Tienda La Ceiba 3,HN,La Ceiba,HIPERMERCADO,4356,2023-12-13,Occidente
+TIENDA_004,Tienda San Salvador 4,SV,San Salvador,HIPERMERCADO,4383,2023-08-05,Norte
+TIENDA_005,Tienda Masaya 5,NI,Masaya,HIPERMERCADO,4108,2023-04-30,Occidente
+TIENDA_006,Tienda Cartago 6,CR,Heredia,HIPERMERCADO,5839,2023-04-12,Occidente
+TIENDA_007,Tienda Guatemala City 7,GT,Guatemala City,HIPERMERCADO,6859,2023-05-23,Oriente
+TIENDA_008,Tienda San Pedro Sula 8,HN,Tegucigalpa,HIPERMERCADO,4881,2023-06-24,Sur
+TIENDA_009,Tienda San Salvador 9,SV,Santa Ana,SUPERMERCADO,1698,2023-02-22,Sur
+TIENDA_010,Tienda Masaya 10,NI,León,SUPERMERCADO,3152,2023-06-26,Capital
+TIENDA_011,Tienda San José 11,CR,Cartago,SUPERMERCADO,1661,2023-08-24,Occidente
+TIENDA_012,Tienda Escuintla 12,GT,Escuintla,SUPERMERCADO,3313,2023-05-31,Sur
+TIENDA_013,Tienda Tegucigalpa 13,HN,La Ceiba,SUPERMERCADO,1642,2023-10-23,Capital
+TIENDA_014,Tienda San Salvador 14,SV,Santa Ana,SUPERMERCADO,1663,2023-12-05,Norte
+TIENDA_015,Tienda León 15,NI,León,SUPERMERCADO,2428,2023-02-21,Sur
+TIENDA_016,Tienda Alajuela 16,CR,Alajuela,SUPERMERCADO,1929,2023-03-25,Sur
+TIENDA_017,Tienda Escuintla 17,GT,Escuintla,SUPERMERCADO,1646,2023-12-26,Occidente
+TIENDA_018,Tienda Tegucigalpa 18,HN,La Ceiba,SUPERMERCADO,2993,2023-11-22,Norte
+TIENDA_019,Tienda Santa Ana 19,SV,Santa Ana,SUPERMERCADO,2052,2023-03-25,Occidente
+TIENDA_020,Tienda Masaya 20,NI,León,SUPERMERCADO,3226,2023-04-23,Capital
+TIENDA_021,Tienda San José 21,CR,Alajuela,SUPERMERCADO,2321,2023-04-28,Sur
+TIENDA_022,Tienda Guatemala City 22,GT,Escuintla,SUPERMERCADO,3294,2023-02-03,Sur
+TIENDA_023,Tienda La Ceiba 23,HN,San Pedro Sula,SUPERMERCADO,2310,2023-04-19,Oriente
+TIENDA_024,Tienda Santa Ana 24,SV,San Salvador,DESCUENTO,1052,2023-03-15,Occidente
+TIENDA_025,Tienda León 25,NI,Masaya,DESCUENTO,1398,2023-10-03,Oriente
+TIENDA_026,Tienda Cartago 26,CR,Alajuela,DESCUENTO,1024,2023-10-26,Norte
+TIENDA_027,Tienda Quetzaltenango 27,GT,Guatemala City,DESCUENTO,1573,2023-09-18,Capital
+TIENDA_028,Tienda Tegucigalpa 28,HN,La Ceiba,DESCUENTO,963,2023-02-26,Oriente
+TIENDA_029,Tienda San Salvador 29,SV,Santa Ana,DESCUENTO,1190,2023-11-02,Occidente
+TIENDA_030,Tienda Masaya 30,NI,León,DESCUENTO,1794,2023-08-28,Occidente
+TIENDA_031,Tienda San José 31,CR,Alajuela,DESCUENTO,1587,2023-01-06,Sur
+TIENDA_032,Tienda Quetzaltenango 32,GT,Quetzaltenango,DESCUENTO,961,2023-02-27,Oriente
+TIENDA_033,Tienda La Ceiba 33,HN,La Ceiba,DESCUENTO,1069,2023-01-02,Occidente
+TIENDA_034,Tienda Sonsonate 34,SV,San Salvador,DESCUENTO,1691,2023-04-02,Sur
+TIENDA_035,Tienda Masaya 35,NI,Masaya,DESCUENTO,1003,2023-11-24,Norte
+TIENDA_036,Tienda Heredia 36,CR,San José,EXPRESS,506,2023-07-11,Sur
+TIENDA_037,Tienda Quetzaltenango 37,GT,Guatemala City,EXPRESS,257,2024-06-01,Sur
+TIENDA_038,Tienda Tegucigalpa 38,HN,Tegucigalpa,EXPRESS,323,2023-06-07,Occidente
+TIENDA_039,Tienda San Salvador 39,SV,Sonsonate,EXPRESS,448,2023-02-10,Capital
+TIENDA_040,Tienda Managua 40,NI,Managua,EXPRESS,537,2023-09-30,Oriente

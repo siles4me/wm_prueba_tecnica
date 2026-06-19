@@ -1,0 +1,201 @@
+item_id,item_name,brand,vendor_id,category,department,cost
+ITEM_001,Juguetes Producto 1,Marca B,VND_016,Juguetes,Dep JUG,25.83
+ITEM_002,Hogar Producto 2,Marca C,VND_006,Hogar,Dep HOG,75.27
+ITEM_003,Hogar Producto 3,Marca D,VND_026,Hogar,Dep HOG,62.65
+ITEM_004,Cuidado Personal Producto 4,Marca E,VND_024,Cuidado Personal,Dep CUI,5.64
+ITEM_005,Juguetes Producto 5,Marca F,VND_005,Juguetes,Dep JUG,23.67
+ITEM_006,Alimentos Producto 6,Marca G,VND_024,Alimentos,Dep ALI,3.6
+ITEM_007,Electrónica Producto 7,Marca H,VND_019,Electrónica,Dep ELE,177.06
+ITEM_008,Hogar Producto 8,Marca I,VND_002,Hogar,Dep HOG,67.47
+ITEM_009,Juguetes Producto 9,Marca J,VND_020,Juguetes,Dep JUG,4.76
+ITEM_010,Alimentos Producto 10,Marca K,VND_029,Alimentos,Dep ALI,14.88
+ITEM_011,Electrónica Producto 11,Marca L,VND_003,Electrónica,Dep ELE,137.6
+ITEM_012,Hogar Producto 12,Marca M,VND_030,Hogar,Dep HOG,43.76
+ITEM_013,Bebidas Producto 13,Marca N,VND_009,Bebidas,Dep BEB,5.65
+ITEM_014,Hogar Producto 14,Marca O,VND_011,Hogar,Dep HOG,44.41
+ITEM_015,Juguetes Producto 15,Marca P,VND_020,Juguetes,Dep JUG,25.57
+ITEM_016,Juguetes Producto 16,Marca Q,VND_007,Juguetes,Dep JUG,28.22
+ITEM_017,Hogar Producto 17,Marca R,VND_003,Hogar,Dep HOG,11.22
+ITEM_018,Limpieza Producto 18,Marca S,VND_027,Limpieza,Dep LIM,4.3
+ITEM_019,Electrónica Producto 19,Marca T,VND_026,Electrónica,Dep ELE,123.11
+ITEM_020,Ropa Producto 20,Marca U,VND_010,Ropa,Dep ROP,5.95
+ITEM_021,Juguetes Producto 21,Marca V,VND_009,Juguetes,Dep JUG,7.63
+ITEM_022,Alimentos Producto 22,Marca W,VND_009,Alimentos,Dep ALI,2.8
+ITEM_023,Bebidas Producto 23,Marca X,VND_022,Bebidas,Dep BEB,2.18
+ITEM_024,Ropa Producto 24,Marca Y,VND_029,Ropa,Dep ROP,16.11
+ITEM_025,Limpieza Producto 25,Marca Z,VND_027,Limpieza,Dep LIM,1.86
+ITEM_026,Bebidas Producto 26,Marca A,VND_021,Bebidas,Dep BEB,0.72
+ITEM_027,Juguetes Producto 27,Marca B,VND_023,Juguetes,Dep JUG,8.09
+ITEM_028,Hogar Producto 28,Marca C,VND_029,Hogar,Dep HOG,2.89
+ITEM_029,Ropa Producto 29,Marca D,VND_012,Ropa,Dep ROP,8.63
+ITEM_030,Electrónica Producto 30,Marca E,VND_010,Electrónica,Dep ELE,44.47
+ITEM_031,Bebidas Producto 31,Marca F,VND_002,Bebidas,Dep BEB,10.43
+ITEM_032,Limpieza Producto 32,Marca G,VND_004,Limpieza,Dep LIM,3.03
+ITEM_033,Bebidas Producto 33,Marca H,VND_020,Bebidas,Dep BEB,6.3
+ITEM_034,Cuidado Personal Producto 34,Marca I,VND_006,Cuidado Personal,Dep CUI,12.13
+ITEM_035,Juguetes Producto 35,Marca J,VND_001,Juguetes,Dep JUG,35.43
+ITEM_036,Alimentos Producto 36,Marca K,VND_014,Alimentos,Dep ALI,19.07
+ITEM_037,Cuidado Personal Producto 37,Marca L,VND_009,Cuidado Personal,Dep CUI,15.16
+ITEM_038,Alimentos Producto 38,Marca M,VND_002,Alimentos,Dep ALI,12.14
+ITEM_039,Limpieza Producto 39,Marca N,VND_015,Limpieza,Dep LIM,4.17
+ITEM_040,Bebidas Producto 40,Marca O,VND_008,Bebidas,Dep BEB,8.89
+ITEM_041,Alimentos Producto 41,Marca P,VND_028,Alimentos,Dep ALI,3.84
+ITEM_042,Alimentos Producto 42,Marca Q,VND_017,Alimentos,Dep ALI,13.07
+ITEM_043,Hogar Producto 43,Marca R,VND_001,Hogar,Dep HOG,71.98
+ITEM_044,Alimentos Producto 44,Marca S,VND_009,Alimentos,Dep ALI,14.68
+ITEM_045,Alimentos Producto 45,Marca T,VND_031,Alimentos,Dep ALI,10.24
+ITEM_046,Cuidado Personal Producto 46,Marca U,VND_004,Cuidado Personal,Dep CUI,8.97
+ITEM_047,Hogar Producto 47,Marca V,VND_023,Hogar,Dep HOG,37.54
+ITEM_048,Hogar Producto 48,Marca W,VND_022,Hogar,Dep HOG,44.83
+ITEM_049,Ropa Producto 49,Marca X,VND_012,Ropa,Dep ROP,40.0
+ITEM_050,Hogar Producto 50,Marca Y,VND_020,Hogar,Dep HOG,82.88
+ITEM_051,Bebidas Producto 51,Marca Z,VND_010,Bebidas,Dep BEB,8.57
+ITEM_052,Hogar Producto 52,Marca A,VND_023,Hogar,Dep HOG,44.75
+ITEM_053,Bebidas Producto 53,Marca B,VND_013,Bebidas,Dep BEB,1.6
+ITEM_054,Ropa Producto 54,Marca C,VND_010,Ropa,Dep ROP,46.33
+ITEM_055,Hogar Producto 55,Marca D,VND_007,Hogar,Dep HOG,54.59
+ITEM_056,Hogar Producto 56,Marca E,VND_015,Hogar,Dep HOG,46.35
+ITEM_057,Hogar Producto 57,Marca F,VND_026,Hogar,Dep HOG,49.9
+ITEM_058,Limpieza Producto 58,Marca G,VND_003,Limpieza,Dep LIM,8.18
+ITEM_059,Bebidas Producto 59,Marca H,VND_003,Bebidas,Dep BEB,6.54
+ITEM_060,Cuidado Personal Producto 60,Marca I,VND_008,Cuidado Personal,Dep CUI,12.57
+ITEM_061,Cuidado Personal Producto 61,Marca J,VND_016,Cuidado Personal,Dep CUI,2.5
+ITEM_062,Electrónica Producto 62,Marca K,VND_029,Electrónica,Dep ELE,228.12
+ITEM_063,Ropa Producto 63,Marca L,VND_016,Ropa,Dep ROP,14.5
+ITEM_064,Hogar Producto 64,Marca M,VND_029,Hogar,Dep HOG,14.42
+ITEM_065,Cuidado Personal Producto 65,Marca N,VND_014,Cuidado Personal,Dep CUI,9.5
+ITEM_066,Alimentos Producto 66,Marca O,VND_015,Alimentos,Dep ALI,16.09
+ITEM_067,Alimentos Producto 67,Marca P,VND_015,Alimentos,Dep ALI,6.06
+ITEM_068,Alimentos Producto 68,Marca Q,VND_018,Alimentos,Dep ALI,8.98
+ITEM_069,Electrónica Producto 69,Marca R,VND_020,Electrónica,Dep ELE,341.51
+ITEM_070,Cuidado Personal Producto 70,Marca S,VND_030,Cuidado Personal,Dep CUI,13.02
+ITEM_071,Electrónica Producto 71,Marca T,VND_016,Electrónica,Dep ELE,303.34
+ITEM_072,Hogar Producto 72,Marca U,VND_009,Hogar,Dep HOG,64.19
+ITEM_073,Cuidado Personal Producto 73,Marca V,VND_009,Cuidado Personal,Dep CUI,8.93
+ITEM_074,Hogar Producto 74,Marca W,VND_011,Hogar,Dep HOG,45.3
+ITEM_075,Bebidas Producto 75,Marca X,VND_008,Bebidas,Dep BEB,4.21
+ITEM_076,Hogar Producto 76,Marca Y,VND_014,Hogar,Dep HOG,11.61
+ITEM_077,Hogar Producto 77,Marca Z,VND_007,Hogar,Dep HOG,38.74
+ITEM_078,Cuidado Personal Producto 78,Marca A,VND_031,Cuidado Personal,Dep CUI,7.46
+ITEM_079,Juguetes Producto 79,Marca B,VND_019,Juguetes,Dep JUG,4.34
+ITEM_080,Hogar Producto 80,Marca C,VND_025,Hogar,Dep HOG,3.16
+ITEM_081,Hogar Producto 81,Marca D,VND_018,Hogar,Dep HOG,75.36
+ITEM_082,Cuidado Personal Producto 82,Marca E,VND_008,Cuidado Personal,Dep CUI,9.19
+ITEM_083,Hogar Producto 83,Marca F,VND_013,Hogar,Dep HOG,21.68
+ITEM_084,Bebidas Producto 84,Marca G,VND_006,Bebidas,Dep BEB,6.0
+ITEM_085,Limpieza Producto 85,Marca H,VND_018,Limpieza,Dep LIM,13.81
+ITEM_086,Alimentos Producto 86,Marca I,VND_001,Alimentos,Dep ALI,7.88
+ITEM_087,Alimentos Producto 87,Marca J,VND_006,Alimentos,Dep ALI,9.74
+ITEM_088,Alimentos Producto 88,Marca K,VND_011,Alimentos,Dep ALI,6.32
+ITEM_089,Bebidas Producto 89,Marca L,VND_027,Bebidas,Dep BEB,7.1
+ITEM_090,Hogar Producto 90,Marca M,VND_024,Hogar,Dep HOG,59.71
+ITEM_091,Electrónica Producto 91,Marca N,VND_021,Electrónica,Dep ELE,277.47
+ITEM_092,Alimentos Producto 92,Marca O,VND_001,Alimentos,Dep ALI,13.3
+ITEM_093,Juguetes Producto 93,Marca P,VND_005,Juguetes,Dep JUG,7.28
+ITEM_094,Alimentos Producto 94,Marca Q,VND_007,Alimentos,Dep ALI,7.26
+ITEM_095,Hogar Producto 95,Marca R,VND_020,Hogar,Dep HOG,19.33
+ITEM_096,Electrónica Producto 96,Marca S,VND_027,Electrónica,Dep ELE,183.57
+ITEM_097,Alimentos Producto 97,Marca T,VND_030,Alimentos,Dep ALI,6.46
+ITEM_098,Bebidas Producto 98,Marca U,VND_013,Bebidas,Dep BEB,7.73
+ITEM_099,Juguetes Producto 99,Marca V,VND_027,Juguetes,Dep JUG,9.99
+ITEM_100,Ropa Producto 100,Marca W,VND_028,Ropa,Dep ROP,10.46
+ITEM_101,Ropa Producto 101,Marca X,VND_019,Ropa,Dep ROP,45.47
+ITEM_102,Cuidado Personal Producto 102,Marca Y,VND_012,Cuidado Personal,Dep CUI,5.78
+ITEM_103,Alimentos Producto 103,Marca Z,VND_014,Alimentos,Dep ALI,9.05
+ITEM_104,Cuidado Personal Producto 104,Marca A,VND_021,Cuidado Personal,Dep CUI,3.27
+ITEM_105,Limpieza Producto 105,Marca B,VND_006,Limpieza,Dep LIM,5.1
+ITEM_106,Ropa Producto 106,Marca C,VND_026,Ropa,Dep ROP,41.16
+ITEM_107,Limpieza Producto 107,Marca D,VND_027,Limpieza,Dep LIM,9.4
+ITEM_108,Ropa Producto 108,Marca E,VND_027,Ropa,Dep ROP,19.27
+ITEM_109,Juguetes Producto 109,Marca F,VND_025,Juguetes,Dep JUG,11.9
+ITEM_110,Hogar Producto 110,Marca G,VND_001,Hogar,Dep HOG,42.38
+ITEM_111,Hogar Producto 111,Marca H,VND_012,Hogar,Dep HOG,25.27
+ITEM_112,Cuidado Personal Producto 112,Marca I,VND_031,Cuidado Personal,Dep CUI,7.02
+ITEM_113,Ropa Producto 113,Marca J,VND_007,Ropa,Dep ROP,12.64
+ITEM_114,Alimentos Producto 114,Marca K,VND_025,Alimentos,Dep ALI,13.14
+ITEM_115,Alimentos Producto 115,Marca L,VND_015,Alimentos,Dep ALI,10.0
+ITEM_116,Cuidado Personal Producto 116,Marca M,VND_023,Cuidado Personal,Dep CUI,2.14
+ITEM_117,Alimentos Producto 117,Marca N,VND_018,Alimentos,Dep ALI,11.45
+ITEM_118,Electrónica Producto 118,Marca O,VND_011,Electrónica,Dep ELE,151.09
+ITEM_119,Bebidas Producto 119,Marca P,VND_008,Bebidas,Dep BEB,3.98
+ITEM_120,Alimentos Producto 120,Marca Q,VND_018,Alimentos,Dep ALI,3.4
+ITEM_121,Juguetes Producto 121,Marca R,VND_024,Juguetes,Dep JUG,21.8
+ITEM_122,Hogar Producto 122,Marca S,VND_017,Hogar,Dep HOG,65.63
+ITEM_123,Electrónica Producto 123,Marca T,VND_010,Electrónica,Dep ELE,343.35
+ITEM_124,Alimentos Producto 124,Marca U,VND_018,Alimentos,Dep ALI,3.0
+ITEM_125,Alimentos Producto 125,Marca V,VND_010,Alimentos,Dep ALI,1.31
+ITEM_126,Ropa Producto 126,Marca W,VND_016,Ropa,Dep ROP,12.14
+ITEM_127,Alimentos Producto 127,Marca X,VND_016,Alimentos,Dep ALI,0.99
+ITEM_128,Hogar Producto 128,Marca Y,VND_028,Hogar,Dep HOG,12.19
+ITEM_129,Hogar Producto 129,Marca Z,VND_003,Hogar,Dep HOG,56.76
+ITEM_130,Electrónica Producto 130,Marca A,VND_026,Electrónica,Dep ELE,173.18
+ITEM_131,Electrónica Producto 131,Marca B,VND_004,Electrónica,Dep ELE,124.08
+ITEM_132,Electrónica Producto 132,Marca C,VND_020,Electrónica,Dep ELE,138.19
+ITEM_133,Alimentos Producto 133,Marca D,VND_015,Alimentos,Dep ALI,9.59
+ITEM_134,Bebidas Producto 134,Marca E,VND_019,Bebidas,Dep BEB,5.35
+ITEM_135,Ropa Producto 135,Marca F,VND_025,Ropa,Dep ROP,34.87
+ITEM_136,Alimentos Producto 136,Marca G,VND_006,Alimentos,Dep ALI,4.87
+ITEM_137,Alimentos Producto 137,Marca H,VND_014,Alimentos,Dep ALI,8.56
+ITEM_138,Hogar Producto 138,Marca I,VND_008,Hogar,Dep HOG,39.38
+ITEM_139,Bebidas Producto 139,Marca J,VND_003,Bebidas,Dep BEB,3.51
+ITEM_140,Ropa Producto 140,Marca K,VND_021,Ropa,Dep ROP,51.15
+ITEM_141,Electrónica Producto 141,Marca L,VND_004,Electrónica,Dep ELE,206.73
+ITEM_142,Electrónica Producto 142,Marca M,VND_027,Electrónica,Dep ELE,239.05
+ITEM_143,Alimentos Producto 143,Marca N,VND_020,Alimentos,Dep ALI,2.2
+ITEM_144,Cuidado Personal Producto 144,Marca O,VND_004,Cuidado Personal,Dep CUI,8.1
+ITEM_145,Hogar Producto 145,Marca P,VND_009,Hogar,Dep HOG,22.81
+ITEM_146,Hogar Producto 146,Marca Q,VND_002,Hogar,Dep HOG,29.3
+ITEM_147,Limpieza Producto 147,Marca R,VND_001,Limpieza,Dep LIM,9.61
+ITEM_148,Alimentos Producto 148,Marca S,VND_019,Alimentos,Dep ALI,20.26
+ITEM_149,Electrónica Producto 149,Marca T,VND_027,Electrónica,Dep ELE,20.36
+ITEM_150,Bebidas Producto 150,Marca U,VND_016,Bebidas,Dep BEB,1.06
+ITEM_151,Hogar Producto 151,Marca V,VND_019,Hogar,Dep HOG,29.8
+ITEM_152,Hogar Producto 152,Marca W,VND_016,Hogar,Dep HOG,73.06
+ITEM_153,Bebidas Producto 153,Marca X,VND_028,Bebidas,Dep BEB,3.69
+ITEM_154,Alimentos Producto 154,Marca Y,VND_022,Alimentos,Dep ALI,7.92
+ITEM_155,Juguetes Producto 155,Marca Z,VND_015,Juguetes,Dep JUG,30.6
+ITEM_156,Alimentos Producto 156,Marca A,VND_031,Alimentos,Dep ALI,4.21
+ITEM_157,Cuidado Personal Producto 157,Marca B,VND_001,Cuidado Personal,Dep CUI,15.27
+ITEM_158,Ropa Producto 158,Marca C,VND_007,Ropa,Dep ROP,27.02
+ITEM_159,Hogar Producto 159,Marca D,VND_015,Hogar,Dep HOG,45.93
+ITEM_160,Cuidado Personal Producto 160,Marca E,VND_030,Cuidado Personal,Dep CUI,4.11
+ITEM_161,Bebidas Producto 161,Marca F,VND_001,Bebidas,Dep BEB,7.94
+ITEM_162,Juguetes Producto 162,Marca G,VND_006,Juguetes,Dep JUG,20.08
+ITEM_163,Bebidas Producto 163,Marca H,VND_008,Bebidas,Dep BEB,0.68
+ITEM_164,Juguetes Producto 164,Marca I,VND_004,Juguetes,Dep JUG,32.49
+ITEM_165,Ropa Producto 165,Marca J,VND_010,Ropa,Dep ROP,13.93
+ITEM_166,Hogar Producto 166,Marca K,VND_016,Hogar,Dep HOG,25.52
+ITEM_167,Alimentos Producto 167,Marca L,VND_030,Alimentos,Dep ALI,9.72
+ITEM_168,Electrónica Producto 168,Marca M,VND_003,Electrónica,Dep ELE,185.69
+ITEM_169,Bebidas Producto 169,Marca N,VND_030,Bebidas,Dep BEB,6.93
+ITEM_170,Cuidado Personal Producto 170,Marca O,VND_024,Cuidado Personal,Dep CUI,3.67
+ITEM_171,Bebidas Producto 171,Marca P,VND_016,Bebidas,Dep BEB,6.91
+ITEM_172,Limpieza Producto 172,Marca Q,VND_011,Limpieza,Dep LIM,5.98
+ITEM_173,Electrónica Producto 173,Marca R,VND_011,Electrónica,Dep ELE,164.75
+ITEM_174,Limpieza Producto 174,Marca S,VND_013,Limpieza,Dep LIM,10.25
+ITEM_175,Alimentos Producto 175,Marca T,VND_024,Alimentos,Dep ALI,10.93
+ITEM_176,Hogar Producto 176,Marca U,VND_022,Hogar,Dep HOG,62.1
+ITEM_177,Cuidado Personal Producto 177,Marca V,VND_002,Cuidado Personal,Dep CUI,8.43
+ITEM_178,Alimentos Producto 178,Marca W,VND_004,Alimentos,Dep ALI,15.94
+ITEM_179,Limpieza Producto 179,Marca X,VND_015,Limpieza,Dep LIM,6.04
+ITEM_180,Alimentos Producto 180,Marca Y,VND_005,Alimentos,Dep ALI,3.99
+ITEM_181,Alimentos Producto 181,Marca Z,VND_020,Alimentos,Dep ALI,12.59
+ITEM_182,Ropa Producto 182,Marca A,VND_028,Ropa,Dep ROP,38.66
+ITEM_183,Ropa Producto 183,Marca B,VND_021,Ropa,Dep ROP,34.18
+ITEM_184,Ropa Producto 184,Marca C,VND_002,Ropa,Dep ROP,44.61
+ITEM_185,Electrónica Producto 185,Marca D,VND_010,Electrónica,Dep ELE,86.95
+ITEM_186,Juguetes Producto 186,Marca E,VND_004,Juguetes,Dep JUG,26.73
+ITEM_187,Cuidado Personal Producto 187,Marca F,VND_006,Cuidado Personal,Dep CUI,8.73
+ITEM_188,Ropa Producto 188,Marca G,VND_026,Ropa,Dep ROP,33.88
+ITEM_189,Alimentos Producto 189,Marca H,VND_031,Alimentos,Dep ALI,6.79
+ITEM_190,Alimentos Producto 190,Marca I,VND_006,Alimentos,Dep ALI,8.67
+ITEM_191,Alimentos Producto 191,Marca J,VND_020,Alimentos,Dep ALI,2.67
+ITEM_192,Ropa Producto 192,Marca K,VND_008,Ropa,Dep ROP,27.39
+ITEM_193,Hogar Producto 193,Marca L,VND_001,Hogar,Dep HOG,18.01
+ITEM_194,Limpieza Producto 194,Marca M,VND_018,Limpieza,Dep LIM,5.56
+ITEM_195,Alimentos Producto 195,Marca N,VND_019,Alimentos,Dep ALI,7.8
+ITEM_196,Bebidas Producto 196,Marca O,VND_015,Bebidas,Dep BEB,9.51
+ITEM_197,Limpieza Producto 197,Marca P,VND_016,Limpieza,Dep LIM,3.16
+ITEM_198,Alimentos Producto 198,Marca Q,VND_010,Alimentos,Dep ALI,6.9
+ITEM_199,Juguetes Producto 199,Marca R,VND_022,Juguetes,Dep JUG,15.79
+ITEM_200,Hogar Producto 200,Marca S,VND_025,Hogar,Dep HOG,4.21
