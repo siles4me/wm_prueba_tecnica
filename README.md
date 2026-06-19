@@ -42,19 +42,51 @@ CasoTecnico/
 
 ---
 
-## Cómo Explorar los Entregables
+## Cómo Reproducir los Resultados
 
-| Archivo | Cómo abrirlo |
-|---------|-------------|
-| `bloque0_auditoria.ipynb` | Jupyter Lab / Jupyter Notebook |
-| `bloque3_analisis.ipynb` | Jupyter Lab / Jupyter Notebook |
-| `bloque5_dashboard.html` | Cualquier navegador (Chrome / Edge) |
-| `bloque5_presentacion_EN.html` | Chrome/Edge → Archivo → Imprimir → Guardar PDF |
-| `bloque1_queries.sql` | Editor de texto o BigQuery Console |
-| `bloque2_modelo.pdf` | Cualquier visor PDF |
-| `*.md` | GitHub o cualquier visor Markdown |
+### Requisitos
 
-Los notebooks leen los datasets directamente desde `Datasets/` y las métricas pre-calculadas desde `results.json`. No requieren instalación adicional para visualización estática.
+```
+Python 3.11+
+pandas >= 2.0
+numpy
+matplotlib
+scipy
+nbformat
+```
+
+### Instalación del entorno
+
+```bash
+python -m venv .venv
+.venv/Scripts/pip install -r requirements.txt
+```
+
+### Orden de ejecución
+
+```bash
+# 1. Calcular todas las métricas analíticas
+.venv/Scripts/python.exe compute_results.py
+# → genera results.json
+
+# 2. Diagrama del modelo dimensional
+.venv/Scripts/python.exe build_bloque2_diagram.py
+# → genera bloque2_modelo.pdf, bloque2_modelo.png
+
+# 3. Notebook de EDA profundo + A/B Test
+.venv/Scripts/python.exe build_bloque3_notebook.py
+# → genera bloque3_analisis.ipynb (abrir en Jupyter Lab)
+
+# 4. Dashboard HTML
+.venv/Scripts/python.exe build_bloque5_dashboard.py
+# → genera bloque5_dashboard.html (abrir en navegador)
+
+# 5. Presentación ejecutiva
+.venv/Scripts/python.exe build_bloque5_presentation.py
+# → genera bloque5_presentacion_EN.html (abrir en navegador → imprimir a PDF)
+```
+
+> Los notebooks (`bloque0_auditoria.ipynb` y `bloque3_analisis.ipynb`) fueron construidos como scripts Python por reproducibilidad y están listos para ejecutarse en **Jupyter Lab** (`jupyter lab` desde el directorio del proyecto).
 
 ---
 
@@ -81,12 +113,11 @@ Los notebooks leen los datasets directamente desde `Datasets/` y las métricas p
 | Q5 | Detección de quiebres de stock (gap-and-island, ≥3 días consecutivos) |
 | Q6 | Análisis de basket size: BASKET_UPLIFT_REAL / SOLO_EFECTO_PRECIO / VOLUMEN_SIN_TICKET_EXTRA / SIN_EFECTO_CLARO |
 
-### Bloque 2 — Modelo Dimensional + Pipeline + Gobernanza
-- **Modelo híbrido** con 2 fact tables: `fact_transactions` (grain: 1 transacción) + `fact_transaction_items` (grain: 1 line item). Núcleo Star Schema con dos normalizaciones outrigger: `dim_product → dim_vendor` y `dim_promotion → dim_store`
-- 6 dimensiones: `dim_date`, `dim_store` (SCD Type 2), `dim_customer` (key=-1 para anónimos), `dim_product`, `dim_vendor`, `dim_promotion`
+### Bloque 2 — Modelo Dimensional
+- **Star Schema** con 2 fact tables: `fact_transactions` (grain: 1 transacción) + `fact_transaction_items` (grain: 1 line item)
+- 5 dimensiones: `dim_date`, `dim_store` (SCD Type 2), `dim_customer` (key=-1 para anónimos), `dim_product`, `dim_vendor`
 - **SCD Type 2** en `dim_store` para preservar historial de `size_sqm` y `format` (crítico para GMV/m² histórico correcto)
-- Pipeline ELT: GCS → BigQuery RAW → STAGING → MARTS, carga incremental nocturna (2:30am), ventana de 48h lookback, MERGE upsert
-- Gobernanza: pseudonimización SHA-256 de `customer_id`, column-level security en BigQuery, row access policies por región
+- ETL: carga incremental nocturna (2:30am), ventana de 48h lookback, MERGE upsert en BigQuery
 
 ### Bloque 3 — EDA + A/B Test
 **EDA:**
@@ -133,11 +164,10 @@ Esta prueba técnica fue desarrollada con asistencia de **Claude (Anthropic)** c
 
 ### Prompts específicos utilizados
 
-| Tarea | Prompt usado | Qué modificó el analista |
+| Tarea | Prompt usado | Qué se realizo manualmente |
 |-------|-------------|--------------------------|
 | Query 5 (stockout) | *"Escribe una query BigQuery para detectar quiebres de stock usando la técnica gap-and-island con GENERATE_DATE_ARRAY y UNNEST. Criterio: 3+ días consecutivos sin ventas en tiendas donde el ítem históricamente se vende (≥7 días de historia). Devuelve store_id, item_id, fechas del gap, duración y GMV perdido estimado como avg_diario × días. Ordena por GMV perdido descendente."* | Añadió el filtro de `unit_price > 0` (hallazgo B0), ajustó el umbral de historia de 7 días, verificó que el island_id fuera correcto con datos reales |
 | Query 6 (basket) | *"Escribe una query BigQuery que compare ticket promedio y unidades promedio entre transacciones con y sin ítems en promoción, por categoría. Pivota el resultado para tener columnas con_promo y sin_promo. Agrega una columna de interpretación: BASKET_UPLIFT_REAL si suben tanto ticket como unidades, SOLO_EFECTO_PRECIO si solo sube el ticket, etc."* | Definió las 4 categorías de clasificación, corrigió el alias `tf_full` → `tx_full`, validó que el join con `transaction_items` usara la granularidad correcta |
-| Builder notebooks | *"Crea un script Python que genere un Jupyter notebook usando nbformat con 2 partes: Parte A de EDA (estacionalidad semanal por formato, Pareto de categorías, heatmap de cohortes, análisis de stockout) y Parte B de A/B test. Usa matplotlib para las visualizaciones, guarda los charts en './bloque3_visualizaciones/'. Agrega celdas markdown explicando cada análisis."* | Especificó el orden de preguntas según el PDF, ajustó el tratamiento de semanas ISO con `dt.isocalendar()` (incompatibilidad pandas 3.x), agregó la sección de decisión de negocio |
 | Diagrama Star Schema | *"Genera un diagrama de Star Schema en Python con matplotlib para un modelo de retail. Tablas: fact_transactions, fact_transaction_items, dim_date, dim_store (SCD Type 2), dim_customer, dim_product, dim_vendor. Usa colores distintos para facts y dims, muestra los campos con tipo de dato, marca PK y FK con etiquetas de texto (no emojis)."* | Definió los campos exactos de cada tabla, añadió la nota de SCD Type 2, corrigió las coordenadas de las flechas FK |
 | Dashboard HTML | *"Genera un archivo HTML con CSS que funcione como mockup de dashboard de retail. Debe tener: header con 4 KPI cards con variación semana anterior, barra de filtros, gráfico de comp sales, ranking de tiendas y una alerta para tiendas BAJO_RENDIMIENTO. Embebe los gráficos como base64 PNG generados con matplotlib. Incluye comentarios <!-- PBI: --> en cada sección para guiar la replicación en Power BI."* | Estructuró el orden de secciones según requerimiento del PDF, definió qué datos de `results.json` van en cada visual, verificó que todos los números coincidieran con el análisis |
 | Corrección de errores | *"Este código lanza ValueError: operands could not be broadcast together with shapes (27,) (26,). El problema está en fill_between donde w24 y w25 tienen distinta longitud. Corrige alineando ambas series al mínimo de longitud."* | Identificó la causa raíz (distinto número de semanas entre años), evaluó si la corrección era correcta semánticamente |
