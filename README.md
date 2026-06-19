@@ -32,13 +32,24 @@ CasoTecnico/
 │
 ├── bloque4_kpi_framework.md         # Framework de 8 KPIs + North Star
 │
-├── bloque5_dashboard.html           # Dashboard mockup para replicar en Power BI
+├── bloque5_dashboard.html           # Dashboard interactivo (GitHub Pages)
 ├── bloque5_presentacion_EN.html     # Presentación ejecutiva 5 slides (English)
 │
 ├── results.json                     # Métricas pre-calculadas (fuente de verdad para notebooks)
 │
 └── prueba_tecnica.pdf               # Enunciado original (referencia)
 ```
+
+---
+
+## Entregables en Línea (GitHub Pages)
+
+| Entregable | URL |
+|------------|-----|
+| **Dashboard Interactivo** | [bloque5_dashboard.html](https://siles4me.github.io/wm_prueba_tecnica/bloque5_dashboard.html) |
+| **Presentación Ejecutiva** | [bloque5_presentacion_EN.html](https://siles4me.github.io/wm_prueba_tecnica/bloque5_presentacion_EN.html) |
+
+> El dashboard incluye filtros funcionales de Formato y País (Chart.js). No requiere servidor — funciona directamente desde el navegador.
 
 ---
 
