@@ -1,0 +1,27 @@
+# Entorno virtual Python
+.venv/
+
+# Archivos de estudio / notas personales
+bloque2_guia_estudio.md
+bloque3_guia_estudio.md
+bloque4_guia_estudio.md
+
+# Scripts de construcción (infraestructura interna, no parte del entregable)
+build_bloque0_notebook.py
+build_bloque2_diagram.py
+build_bloque3_notebook.py
+build_bloque5_dashboard.py
+build_bloque5_presentation.py
+compute_results.py
+
+# VS Code settings
+.vscode/
+
+# Checkpoints de Jupyter
+.ipynb_checkpoints/
+
+# Archivos temporales / sistema
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
